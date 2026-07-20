@@ -1,0 +1,26 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+build/
+dist/
+.venv/
+venv/
+.env
+
+# Testing / coverage
+.pytest_cache/
+.coverage
+htmlcov/
+.ruff_cache/
+
+# Generated data (large / reproducible) — keep the committed example sumstats
+data/processed/
+data/external/*.tsv.gz
+
+# OS / editor
+.DS_Store
+.idea/
+.vscode/
+*.ipynb_checkpoints
