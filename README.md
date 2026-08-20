@@ -2,7 +2,7 @@
 
 **A reproducible, end-to-end pipeline for Alzheimer's disease genetics and multi-omics integration — GWAS → APOE×ancestry stratification → sex-stratified association → colocalization / Mendelian randomization → machine-learning multi-omics integration.**
 
-This repository is a portfolio project built to demonstrate readiness for postdoctoral research in population genetics, functional genomics, and multi-omics of Alzheimer's disease. It reproduces the *shape* of the core analyses used in this subfield on a fully simulated, planted-signal cohort, so the entire pipeline runs on any laptop with no access-restricted data. The GWAS causal-inference modules also wire up to **real, open-access public AD GWAS summary statistics**.
+This repository is a portfolio project built to demonstrate capability to work in research in population genetics, functional genomics, and multi-omics of Alzheimer's disease. It reproduces the *shape* of the core analyses used in this subfield on a fully simulated, planted-signal cohort, so the entire pipeline runs on any laptop with no access-restricted data. The GWAS causal-inference modules also wire up to **real, open-access public AD GWAS summary statistics**.
 
 The analytical centerpiece is **machine-learning integration of multi-omic layers** — comparing early fusion, late fusion (stacking), and per-block models under leakage-safe cross-validation, then interpreting the result with block ablation, grouped permutation importance, and sex-stratified evaluation.
 
@@ -98,12 +98,6 @@ results/              generated tables + figures (committed for the portfolio vi
 - **Reproducibility**: single RNG seed, pinned dependencies, installable package, deterministic simulation.
 - **Validation as tests**: the test suite asserts that each method recovers known ground truth (APOE OR ordering, MR effect size, coloc hypothesis, integration > chance).
 - **CI**: GitHub Actions runs the suite and a smoke pipeline on every push.
-
----
-
-## For reviewers from the lab
-
-I come from the **signal-processing / EEG / computational-modeling** side of neuroscience. [`docs/background_bridge.md`](docs/background_bridge.md) maps that background directly onto this stack — high-dimensional inference, multiple-testing control, feature-group attribution, and leakage-safe cross-validation are the same skills whether the features are spectral EEG bands or omic layers. This repo is my demonstration that the genetic-data-pipeline learning curve is short.
 
 ## License
 
